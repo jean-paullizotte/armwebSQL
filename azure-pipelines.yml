@@ -20,7 +20,7 @@ steps:
   displayName: 'Build solution'
   inputs:
     solution: 'WebApp\HelloWorld\HelloWorld.csproj'
-    msbuildArgs: '/p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:SkipInvalidConfigurations=true /p:PackageLocation="$(build.artifactstagingdirectory)\\"'
+    msbuildArgs: '/p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:SkipInvalidConfigurations=true /p:PackageLocation="$(build.artifactstagingdirectory)\HelloWorld\bin"'
     platform: 'any cpu'
     configuration: 'release'
 
@@ -34,5 +34,5 @@ steps:
 - task: PublishBuildArtifacts@1
   displayName: 'Publish Artifact'
   inputs:
-    PathtoPublish: '$(System.DefaultWorkingDirectory)/**/HelloWorld\bin'
+    PathtoPublish: '$(build.artifactstagingdirectory)\HelloWorld\bin'
     ArtifactName: '*.zip'
