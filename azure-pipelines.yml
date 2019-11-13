@@ -14,7 +14,7 @@ steps:
 - task: NuGetCommand@2
   displayName: 'NuGet restore'
   inputs:
-    restoreSolution: 'tailspintoysweb.csproj'
+    restoreSolution: 'WebApp\HelloWorld\HelloWorld.csproj'
 
 - task: VSBuild@1
   displayName: 'Build solution'
@@ -35,5 +35,5 @@ steps:
   displayName: 'Publish Artifact'
   inputs:
     PathtoPublish: '$(build.artifactstagingdirectory)'
-    ArtifactName: 'TailspinToys-CI'
+    ArtifactName: 'HelloWorld'
   condition: succeededOrFailed()
