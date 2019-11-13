@@ -1,0 +1,7 @@
+C:\Source\Repos\armwebSQL\WebApp\HelloWorld\bin\HelloWorld.dll.config
+C:\Source\Repos\armwebSQL\WebApp\HelloWorld\bin\HelloWorld.dll
+C:\Source\Repos\armwebSQL\WebApp\HelloWorld\bin\HelloWorld.pdb
+C:\Source\Repos\armwebSQL\WebApp\HelloWorld\obj\Debug\HelloWorld.csprojAssemblyReference.cache
+C:\Source\Repos\armwebSQL\WebApp\HelloWorld\obj\Debug\HelloWorld.csproj.CoreCompileInputs.cache
+C:\Source\Repos\armwebSQL\WebApp\HelloWorld\obj\Debug\HelloWorld.dll
+C:\Source\Repos\armwebSQL\WebApp\HelloWorld\obj\Debug\HelloWorld.pdb
