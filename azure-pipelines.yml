@@ -20,7 +20,7 @@ steps:
   displayName: 'Build solution'
   inputs:
     solution: 'WebApp\HelloWorld\HelloWorld.csproj'
-    msbuildArgs: '/p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:SkipInvalidConfigurations=true /p:PackageLocation="$(build.artifactstagingdirectory)\HelloWorld\bin"'
+    msbuildArgs: '/p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:SkipInvalidConfigurations=true /p:PackageLocation="$(build.artifactstagingdirectory)\HelloWorld\bin\\" /p:OutputPath="$(build.artifactstagingdirectory)\HelloWorld\bin\\"'
     platform: 'any cpu'
     configuration: 'release'
 
