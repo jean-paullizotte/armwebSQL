@@ -25,6 +25,20 @@ steps:
     configuration: 'release'
 
 
+
+- task: CopyFiles@2
+  inputs:
+    SourceFolder: 'Scripts'
+    Contents: '**'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)\Scripts'
+
+    - task: CopyFiles@2
+  inputs:
+    SourceFolder: 'Templates'
+    Contents: '**'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)\Templates'
+
+
 - task: PublishBuildArtifacts@1
   inputs:
         PathtoPublish: '$(Build.ArtifactStagingDirectory)'
